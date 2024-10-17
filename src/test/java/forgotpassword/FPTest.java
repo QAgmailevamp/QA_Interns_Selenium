@@ -18,6 +18,6 @@ public class FPTest extends BaseTest
      AlertPage alertPage = fpPage.clickRetButton();
      assertTrue(alertPage.getAlertText().contains(
              "Your email was sent"),
-             "cheen tapak dum dum");
+             "Error");
     }
 }
