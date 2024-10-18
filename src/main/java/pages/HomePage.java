@@ -12,40 +12,52 @@ public class HomePage
         this.driver = driver;
     }
 
-//    public LoginPage clickFormAuthentication()
-//    {
-//        clickLink("Form Authentication");
-//        return new LoginPage(driver);
-//    }
+    public LoginPage clickFormAuthentication()
+    {
+        clickLink("Form Authentication");
+        return new LoginPage(driver);
+    }
 
-//    public DropdownPage clickDropDown()
-//    {
-//        clickLink("Dropdown");
-//        return new DropdownPage(driver);
-//    }
+    public DropdownPage clickDropDown()
+    {
+        clickLink("Dropdown");
+        return new DropdownPage(driver);
+    }
 
-//    public FPPage clickFP()
-//    {
-//        clickLink("Forgot Password");
-//        return new FPPage(driver);
-//    }
+    public FPPage clickFP()
+    {
+        clickLink("Forgot Password");
+        return new FPPage(driver);
+    }
 
-//    public HoversPage clickHovers()
-//    {
-//        clickLink("Hovers");
-//        return new HoversPage(driver);
-//    }
+    public HoversPage clickHovers()
+    {
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
 
-//    public KeyPressesPage clickKeyPresses()
-//    {
-//        clickLink("Key Presses");
-//        return new KeyPressesPage(driver);
-//    }
+    public KeyPressesPage clickKeyPresses()
+    {
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
 
     public HSliderPage clickHSlider()
     {
         clickLink("Horizontal Slider");
         return new HSliderPage(driver);
+    }
+
+    public AlertsPage clickJavaScriptAlerts()
+    {
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
+
+    public FileUploadPage clickFileUpload()
+    {
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
     }
 
 

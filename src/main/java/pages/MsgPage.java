@@ -3,18 +3,18 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AlertPage
+public class MsgPage
 {
     private WebDriver driver;
     private By msg = By.id("flash");
 
-    public AlertPage(WebDriver driver)
+    public MsgPage(WebDriver driver)
     {
         this.driver = driver;
 
     }
 
-    public String getAlertText()
+    public String getMsgText()
     {
         return driver.findElement(msg).getText();
     }

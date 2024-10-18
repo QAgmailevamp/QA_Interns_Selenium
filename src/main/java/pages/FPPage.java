@@ -19,10 +19,10 @@ public class FPPage
         driver.findElement(emailField).sendKeys(email);
     }
 
-    public AlertPage clickRetButton()
+    public MsgPage clickRetButton()
     {
         driver.findElement(retButton).click();
-        return new AlertPage(driver);
+        return new MsgPage(driver);
     }
 
 

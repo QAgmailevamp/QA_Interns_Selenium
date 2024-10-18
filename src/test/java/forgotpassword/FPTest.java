@@ -2,8 +2,8 @@ package forgotpassword;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pages.AlertPage;
 import pages.FPPage;
+import pages.MsgPage;
 
 import static org.testng.Assert.assertTrue;
 
@@ -15,8 +15,8 @@ public class FPTest extends BaseTest
      FPPage fpPage =  homePage.clickFP();
       fpPage.setEmail("chandler@bing.com");
 
-     AlertPage alertPage = fpPage.clickRetButton();
-     assertTrue(alertPage.getAlertText().contains(
+     MsgPage msgPage = fpPage.clickRetButton();
+     assertTrue(msgPage.getMsgText().contains(
              "Your email was sent"),
              "Error");
     }
