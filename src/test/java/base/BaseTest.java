@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 
 public class BaseTest {
-    private WebDriver driver;
+    public WebDriver driver;
     protected HomePage homepage;
 
     @BeforeClass
