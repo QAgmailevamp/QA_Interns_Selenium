@@ -60,6 +60,25 @@ public class HomePage
         return new FileUploadPage(driver);
     }
 
+    public ContextMenuPage  clickContextMenu()
+    {
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
+    public FramesPage  clickFramesPage()
+    {
+        clickLink("Frames");
+        clickLink("iFrame");
+        return new FramesPage(driver);
+    }
+
+    public DynamicLoadingPage  clickDynamicLoading()
+    {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
 
     private void clickLink(String linkText)
     {
