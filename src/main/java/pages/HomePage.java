@@ -34,6 +34,42 @@ public class HomePage {
         clickLink("Horizontal Slider");
         return new SliderPage(driver);
     }
+    public alertsPage clickAlertsPage(){
+        clickLink("JavaScript Alerts");
+        return new alertsPage(driver);
+    }
+    public fileUploadPage clickFileUploadPage(){
+        clickLink("File Upload");
+        return new fileUploadPage(driver);
+    }
+    public contextMenuPage clickContextMenu(){
+        clickLink("Context Menu");
+        return new contextMenuPage(driver);
+    }
+    public editorPage clickEditorPage(){
+        clickLink("WYSIWYG Editor");
+        return new editorPage(driver);
+    }
+    public DynamicLoadPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadPage(driver);
+    }
+    public DomPage clickLargeDeepDom(){
+        clickLink("Large & Deep DOM");
+        return new DomPage(driver);
+    }
+    public infiniteScroll clickInfiniteScrollPage(){
+        clickLink("Infinite Scroll");
+        return new infiniteScroll(driver);
+    }
+    public jsDropDown clickJsDropDownPage(){
+        clickLink("Dropdown");
+        return new jsDropDown(driver);
+    }
+    public MultipleWindowsPage clickMultipleWindowsPage(){
+        clickLink("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
