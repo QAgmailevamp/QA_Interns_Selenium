@@ -2,8 +2,6 @@ package dynamicloading;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pages.DLE1Page;
-import pages.DynamicLoadingPage;
 
 import static org.testng.Assert.assertEquals;
 

@@ -79,6 +79,29 @@ public class HomePage
         return new DynamicLoadingPage(driver);
     }
 
+    public LnDDOMPage  clickLnDDOM()
+    {
+        clickLink("Large & Deep DOM");
+        return new LnDDOMPage(driver);
+    }
+
+    public InfiniteScrollPage  clickInfiniteScroll()
+    {
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
+    public ChTenExPage clickDropdown()
+    {
+        clickLink("Dropdown");
+        return new ChTenExPage(driver);
+    }
+
+    public MultipleWindowsPage clickMultipleWindows(){
+        clickLink("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
+
 
     private void clickLink(String linkText)
     {
